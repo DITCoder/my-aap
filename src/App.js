@@ -1,7 +1,7 @@
 import logo from './logo.svg'; 
 import './App.css'; 
 import ListSchedules from './ListSchedules/listschedules'
-import Form from './FormComponent/FormComponent'
+import Form from './FormComponent/FormComponent.tsx'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 const router =  createBrowserRouter([{
   path:'/',

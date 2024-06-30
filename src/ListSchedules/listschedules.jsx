@@ -1,11 +1,10 @@
 import React, { useState , useEffect} from 'react';
-import { Table, Card, CardBody, CardHeader, CardSubtitle, Spinner, Button } from 'reactstrap';
+import { Table, Card, CardBody, CardHeader, CardSubtitle, Spinner, Button } from 'react-bootstrap';
 import { useRef } from 'react';
 import { useMutation, useQuery } from "@apollo/client";
 import Schedule from "../classes/schedule.ts";
 import { GET_ALL_SCHEDULES, DELETE_SCHEDULE } from "../services/queries.ts";
-import {Link} from 'react-router-dom'; 
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from 'react-router-dom'; 
 
 export default function ListSchedules()  {  
 

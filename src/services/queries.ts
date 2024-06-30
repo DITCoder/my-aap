@@ -1,4 +1,5 @@
-import { gql } from "@apollo/client"; 
+import { gql, TypedDocumentNode } from "@apollo/client"; 
+import  { Schedule, Ata } from "../classes/schedule";
  
 export const EDIT_SCHEDULE = gql`
 mutation EditSchedule ($createScheduleSchedule: ScheduleInput) {
@@ -44,7 +45,10 @@ query ExampleQuery {
 
 `;
 
-export const GET_SCHEDULE = gql`
+interface Variables {
+  id: string;
+}
+export const GET_SCHEDULE : TypedDocumentNode<Ata, Variables> = gql`
 query ScheduleQuery($id: String!) { 
   scheduleById(id: $id) { 
     _id
