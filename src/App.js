@@ -1,6 +1,6 @@
 import logo from './logo.svg'; 
 import './App.css'; 
-import ListSchedules from './ListSchedules/listschedules.tsx'
+import ListSchedules from './ListSchedules/ListSchedules.tsx'
 import Form from './FormComponent/FormComponent.tsx'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 const router =  createBrowserRouter([{
